@@ -177,11 +177,11 @@ public class TripleT : MonoBehaviour
     {
         if (collision.gameObject == player.gameObject)
         {
-            Rigidbody playerRB = collision.gameObject.GetComponent<Rigidbody>();
-            if (playerRB != null)
+            CharacterController playerCC = collision.gameObject.GetComponent<CharacterController>();
+            if (playerCC != null)
             {
                 Vector3 pushDirection = (collision.transform.position - transform.position).normalized;
-                playerRB.AddForce(pushDirection * pushForce, ForceMode.Impulse);
+                playerCC.Move(pushDirection * pushForce * Time.deltaTime);
                 playerScript.playerHealth -= damage;
                 print("Player Health: " + playerScript.playerHealth);
             }

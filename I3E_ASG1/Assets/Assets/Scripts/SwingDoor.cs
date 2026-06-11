@@ -18,9 +18,8 @@ public class SwingDoor : MonoBehaviour
     {
         if (OpenDoor && !(transform.rotation.y < -0.78539816339 || transform.rotation.y > 0.78539816339))
         {
-            print(transform.rotation.y);
 
-            if(player.gameObject.transform.position.y > transform.position.y)
+            if(player.gameObject.transform.position.z > transform.position.z)
             {
                 transform.Rotate(Vector3.up, rotateSpeed*Time.deltaTime);
             }
