@@ -1,6 +1,7 @@
 # I3E ASG1
 
 A first-person game built in Unity 6 with a brainrot meme theme, featuring Italian Brainrot creatures, surreal environments, and a variety of gameplay mechanics.
+I am not a brainrotted child I swear. Have fun grading this teacher
 
 ---
 
