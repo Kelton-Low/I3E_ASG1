@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class TeleportToScene : MonoBehaviour
 {
+    //For the inner door
     [SerializeField] private string sceneName = "Scene2";
     [SerializeField] private GameObject player;
 

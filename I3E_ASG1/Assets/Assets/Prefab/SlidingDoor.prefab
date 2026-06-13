@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 254133344199425203}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.42, y: 0, z: 5.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 5938350809346260656}
   - component: {fileID: 136709111925534329}
   - component: {fileID: 2090947682821930488}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: DoorHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a043782d49a3b994091992cdae5591ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SlidingDoor
+  player: {fileID: 0}
 --- !u!1 &7342410371267823019
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,7 +212,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.2314423, y: -0.003282019, z: 0.021438343}
-  m_LocalScale: {x: 0.48839533, y: 1.012967, z: 0.079389}
+  m_LocalScale: {x: 0.4690248, y: 1.012967, z: 0.079389}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5451754202816183735}
@@ -249,7 +250,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e80514de641c3e74aa431b3c8aa1902d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -323,7 +324,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.23144232, y: -0.003282019, z: 0.021438343}
-  m_LocalScale: {x: 0.48839533, y: 1.012967, z: 0.079389}
+  m_LocalScale: {x: 0.45484746, y: 1.012967, z: 0.079389}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5451754202816183735}
@@ -361,7 +362,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: e80514de641c3e74aa431b3c8aa1902d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

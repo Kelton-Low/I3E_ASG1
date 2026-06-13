@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class CreateGridLighting : MonoBehaviour
 {
+    /// <summary>
+    /// I was too lazy to place 121 lights by hand so it comes in a script
+    /// </summary>
     [SerializeField] private int resolution = 10;
     [SerializeField] private float lightIntensity = 1f;
     [SerializeField] private Color lightColor = Color.white;
@@ -12,12 +15,15 @@ public class CreateGridLighting : MonoBehaviour
     }
     void SpawnGrid()
     {
+        
         Vector3 size = GetComponent<Collider>().bounds.size;
+
         Vector3 cornerCoordinate = new Vector3(
             transform.position.x-(size.x/2)+(size.x/resolution/2),
             transform.position.y,
             transform.position.z-(size.z/2)+(size.z/resolution/2)
             );
+        //spawn in the lights in the correct coordinate
         for (int row = 0; row < resolution-1; row++)
         {
             for (int col = 0; col < resolution-1; col++)
@@ -27,6 +33,7 @@ public class CreateGridLighting : MonoBehaviour
                     cornerCoordinate.y,
                     cornerCoordinate.z + (size.z/(resolution-1)*col)
                 );
+                //set parameters for the light (can't use area cause it needs to be baked)
                 GameObject lightObj = new GameObject($"Light_{row}_{col}");
                 lightObj.transform.position = position;
                 lightObj.transform.parent = transform;
